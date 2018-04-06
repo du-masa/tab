@@ -5,7 +5,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   entry: {
     jquery: './assets/jquery/jquery-main.js',
-    vue: './assets/vue/vue-main.js'
+    jquery_loop: './assets/jquery/jquery-main-loop.js',
+    vue: './assets/vue/vue-main.js',
+    vue_loop: './assets/vue/vue-main-loop.js',
   },
   output: {
     path: path.resolve(__dirname, 'public/js'),

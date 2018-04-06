@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/vue.css">
+</head>
+<body>
+    <main>
+        <div class="tabContent" id="tabContent">
+          <h1>Tab</h1>
+            <ul class="tab">
+                <li class="tab__item" v-for="tab in tabList">
+                  <div v-on:click="setActiveTab(tab.title)" class="tab__target" v-bind:class="{'tab__target--active': activeTab === tab.title}">
+                    {{tab.title}}
+                  </div>
+                </li>
+            </ul>
+            <div class="tabMain">
+                <section class="tabMain__section" v-for="tabMain in tabList" v-if="activeTab === tabMain.title">
+                    {{tabMain.text}}
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="./js/vue_loop.bundle.js"></script>
+</body>
+</html>

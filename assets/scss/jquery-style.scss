@@ -1,0 +1,16 @@
+@import 'globalcss/normalize';
+@import 'globalcss/title';
+@import 'tab';
+
+// @add style _tab.scss
+.tabMain {
+  &__section {
+    display: none;
+    opacity: 0;
+
+    &--active {
+      display: block;
+      opacity: 1;
+    }
+  }
+}

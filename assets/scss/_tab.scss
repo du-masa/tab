@@ -1,0 +1,30 @@
+.tab {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  background: #4ebdd5;
+
+  &__item {
+    text-align: center;
+    flex: 1;
+  }
+
+  &__target {
+    text-decoration: none;
+    padding: 20px 0;
+    color: darken(#fff, 10%);
+    display: block;
+    cursor: pointer;
+
+    &--active {
+      color: #fff;
+      border-bottom: 4px solid #fff;
+    }
+  }
+}
+
+.tabMain {
+  padding: 20px;
+}

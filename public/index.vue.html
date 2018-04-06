@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/vue.css">
+</head>
+<body>
+    <main>
+        <div class="tabContent" id="tabContent">
+          <h1>Tab</h1>
+            <ul class="tab">
+                <li class="tab__item">
+                  <div v-on:click="setActiveTab('tab1')" v-bind:class="{'tab__target--active': activeTab === 'tab1'}" class="tab__target">tab1</div>
+                </li>
+                <li class="tab__item">
+                  <div v-on:click="setActiveTab('tab2')" v-bind:class="{'tab__target--active': activeTab === 'tab2'}" class="tab__target">tab2</div>
+                </li>
+                <li class="tab__item">
+                  <div v-on:click="setActiveTab('tab3')" v-bind:class="{'tab__target--active': activeTab === 'tab3'}" class="tab__target">tab3</div>
+                </li>
+                <li class="tab__item">
+                  <div v-on:click="setActiveTab('tab4')" v-bind:class="{'tab__target--active': activeTab === 'tab4'}" class="tab__target">tab4</div>
+                </li>
+            </ul>
+            <div class="tabMain">
+                <section class="tabMain__section" v-if="activeTab === 'tab1'">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut.
+                </section>
+                <section class="tabMain__section" v-if="activeTab === 'tab2'">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, cum dolorem quisquam consequatur ex placeat ratione soluta nulla tenetur quos!
+                </section>
+                <section class="tabMain__section" v-if="activeTab === 'tab3'">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, atque ipsum aspernatur et sit quod accusantium corporis tempora ea quia dignissimos nisi fugit fuga saepe impedit culpa similique eum illum pariatur! Ea corrupti eius voluptates error eum assumenda labore aperiam!
+                </section>
+                <section class="tabMain__section" v-if="activeTab === 'tab4'">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque eveniet ipsum possimus blanditiis consequatur inventore aliquid nobis. Unde alias ullam nulla eveniet, nihil accusamus rem voluptatem iure corporis fuga commodi eos temporibus, error minus, cupiditate laborum dignissimos reiciendis eligendi autem! Illum, sit quasi deleniti vitae consequatur sunt? Dolores, officiis.
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="./js/vue.bundle.js"></script>
+</body>
+</html>

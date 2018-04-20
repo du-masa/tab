@@ -27,13 +27,4 @@
 
 .tabMain {
   padding: 20px;
-  &__section {
-    display: none;
-    opacity: 0;
-
-    &--active {
-      display: block;
-      opacity: 1;
-    }
-  }
 }

@@ -4,7 +4,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
-    tab: './assets/tab.js',
+    jquery: './demo/assets/jquery/jquery-main.js',
+    jquery_loop: './demo/assets/jquery/jquery-main-loop.js',
+    vue: './demo/assets/vue/vue-main.js',
+    vue_loop: './demo/assets/vue/vue-main-loop.js',
+    vue_jsonServer: './demo/assets/vue/vue-main-jsonserver.js',
   },
   output: {
     path: path.resolve(__dirname, 'public/js'),

@@ -28,9 +28,11 @@ module.exports = {
     },
     "server": {
       baseDir: "./public",
-      index: "tab.html"
+      index: "tab.html",
+      serveStaticOptions: {
+        extensions: ["html"]
+      }
     },
-    // "server": false,
     // "proxy": {
       // target: 'http://localhost:8888',
     // },

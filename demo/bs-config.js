@@ -28,7 +28,10 @@ module.exports = {
     },
     "server": {
       baseDir: "./demo/public",
-      index: "index.jquery.html"
+      index: "index.jquery.html",
+      serveStaticOptions: {
+        extensions: ["html"]
+      }
     },
     // "server": false,
     // "proxy": {

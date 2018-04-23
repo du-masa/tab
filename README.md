@@ -51,7 +51,7 @@ $ npm run start:demo
 
 このコマンドにより、webpackのビルドとbrowser-syncによるローカルサーバーが立ち上がります。
 
-デフォルトのhtmlは、`index.jquery.html`
+デフォルトのhtmlは、`index.jquery.html`
 
 次のURLで他のデモページも見れます。
 
@@ -65,7 +65,7 @@ $ npm run start:demo
 
 `demo/assets`ディレクトリには、ビルド前のjsファイルとscssファイルがあります。
 
-jqueryとvueで書き方がどう変わっているか確認できます。
+jqueryとvueで書き方がどのように変わっているか確認できます。
 
 - `demo/assets/jquery/jquery-main.js`
 index.jquery.htmlで読み込んでいるjsです。

@@ -24,7 +24,11 @@
     "sass-loader": "^6.0.7",
     "randomatic": ">=3.0.0",
     "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
+    "webpack-cli": "^2.0.13",
+    "lodash": ">=4.17.11",
+    "extend": ">=3.0.2",
+    "cryptiles": ">=4.1.2",
+    "macaddress": ">=0.2.9"
   },
   "dependencies": {
     "jquery": "^3.3.1",
